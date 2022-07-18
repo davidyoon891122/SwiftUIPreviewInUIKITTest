@@ -15,3 +15,14 @@ class ViewController: UIViewController {
     }
 }
 
+#if canImport(SwiftUI) && DEBUG
+import SwiftUI
+
+struct ViewContoller_Preview: PreviewProvider {
+    static var previews: some View {
+        ViewController().showPreview(.iPhone12Pro)
+    }
+}
+
+#endif
+
