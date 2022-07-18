@@ -105,16 +105,12 @@
 		ADF671192886208100675180 /* PreviewTest */ = {
 			isa = PBXGroup;
 			children = (
-				ADF6711A2886208100675180 /* AppDelegate.swift */,
-				ADF6711C2886208100675180 /* SceneDelegate.swift */,
-				ADF6711E2886208100675180 /* ViewController.swift */,
+				ADF67156288629CD00675180 /* Delegate */,
+				ADF67157288629D900675180 /* Extensions */,
+				ADF67158288629F000675180 /* Scene */,
 				ADF671232886208300675180 /* Assets.xcassets */,
 				ADF671252886208300675180 /* LaunchScreen.storyboard */,
 				ADF671282886208300675180 /* Info.plist */,
-				ADF6714A2886213B00675180 /* MyYellowButton.swift */,
-				ADF6714C2886224100675180 /* Extension+UIView.swift */,
-				ADF6714E2886233600675180 /* TestView.swift */,
-				ADF67150288623D000675180 /* Extension+UIViewController.swift */,
 			);
 			path = PreviewTest;
 			sourceTree = "<group>";
@@ -134,6 +130,34 @@
 				ADF6713D2886208300675180 /* PreviewTestUITestsLaunchTests.swift */,
 			);
 			path = PreviewTestUITests;
+			sourceTree = "<group>";
+		};
+		ADF67156288629CD00675180 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				ADF6711A2886208100675180 /* AppDelegate.swift */,
+				ADF6711C2886208100675180 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		ADF67157288629D900675180 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADF6714C2886224100675180 /* Extension+UIView.swift */,
+				ADF67150288623D000675180 /* Extension+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADF67158288629F000675180 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				ADF6711E2886208100675180 /* ViewController.swift */,
+				ADF6714A2886213B00675180 /* MyYellowButton.swift */,
+				ADF6714E2886233600675180 /* TestView.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
