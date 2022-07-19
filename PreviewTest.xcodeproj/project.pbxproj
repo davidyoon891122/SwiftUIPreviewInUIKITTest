@@ -13,8 +13,6 @@
 		ADF671242886208300675180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF671232886208300675180 /* Assets.xcassets */; };
 		ADF671272886208300675180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF671252886208300675180 /* LaunchScreen.storyboard */; };
 		ADF671322886208300675180 /* PreviewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF671312886208300675180 /* PreviewTestTests.swift */; };
-		ADF6713C2886208300675180 /* PreviewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6713B2886208300675180 /* PreviewTestUITests.swift */; };
-		ADF6713E2886208300675180 /* PreviewTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6713D2886208300675180 /* PreviewTestUITestsLaunchTests.swift */; };
 		ADF6714B2886213B00675180 /* MyYellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6714A2886213B00675180 /* MyYellowButton.swift */; };
 		ADF6714D2886224100675180 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6714C2886224100675180 /* Extension+UIView.swift */; };
 		ADF6714F2886233600675180 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF6714E2886233600675180 /* TestView.swift */; };
@@ -23,13 +21,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		ADF6712E2886208300675180 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADF6710F2886208100675180 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADF671162886208100675180;
-			remoteInfo = PreviewTest;
-		};
-		ADF671382886208300675180 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADF6710F2886208100675180 /* Project object */;
 			proxyType = 1;
@@ -48,9 +39,6 @@
 		ADF671282886208300675180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADF6712D2886208300675180 /* PreviewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreviewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF671312886208300675180 /* PreviewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTestTests.swift; sourceTree = "<group>"; };
-		ADF671372886208300675180 /* PreviewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreviewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADF6713B2886208300675180 /* PreviewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTestUITests.swift; sourceTree = "<group>"; };
-		ADF6713D2886208300675180 /* PreviewTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ADF6714A2886213B00675180 /* MyYellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyYellowButton.swift; sourceTree = "<group>"; };
 		ADF6714C2886224100675180 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		ADF6714E2886233600675180 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -72,13 +60,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADF671342886208300675180 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +68,6 @@
 			children = (
 				ADF671192886208100675180 /* PreviewTest */,
 				ADF671302886208300675180 /* PreviewTestTests */,
-				ADF6713A2886208300675180 /* PreviewTestUITests */,
 				ADF671182886208100675180 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +77,6 @@
 			children = (
 				ADF671172886208100675180 /* PreviewTest.app */,
 				ADF6712D2886208300675180 /* PreviewTestTests.xctest */,
-				ADF671372886208300675180 /* PreviewTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,15 +100,6 @@
 				ADF671312886208300675180 /* PreviewTestTests.swift */,
 			);
 			path = PreviewTestTests;
-			sourceTree = "<group>";
-		};
-		ADF6713A2886208300675180 /* PreviewTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ADF6713B2886208300675180 /* PreviewTestUITests.swift */,
-				ADF6713D2886208300675180 /* PreviewTestUITestsLaunchTests.swift */,
-			);
-			path = PreviewTestUITests;
 			sourceTree = "<group>";
 		};
 		ADF67156288629CD00675180 /* Delegate */ = {
@@ -176,6 +146,8 @@
 			dependencies = (
 			);
 			name = PreviewTest;
+			packageProductDependencies = (
+			);
 			productName = PreviewTest;
 			productReference = ADF671172886208100675180 /* PreviewTest.app */;
 			productType = "com.apple.product-type.application";
@@ -198,24 +170,6 @@
 			productReference = ADF6712D2886208300675180 /* PreviewTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ADF671362886208300675180 /* PreviewTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADF671472886208300675180 /* Build configuration list for PBXNativeTarget "PreviewTestUITests" */;
-			buildPhases = (
-				ADF671332886208300675180 /* Sources */,
-				ADF671342886208300675180 /* Frameworks */,
-				ADF671352886208300675180 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADF671392886208300675180 /* PBXTargetDependency */,
-			);
-			name = PreviewTestUITests;
-			productName = PreviewTestUITests;
-			productReference = ADF671372886208300675180 /* PreviewTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,10 +187,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = ADF671162886208100675180;
 					};
-					ADF671362886208300675180 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = ADF671162886208100675180;
-					};
 				};
 			};
 			buildConfigurationList = ADF671122886208100675180 /* Build configuration list for PBXProject "PreviewTest" */;
@@ -248,13 +198,14 @@
 				Base,
 			);
 			mainGroup = ADF6710E2886208100675180;
+			packageReferences = (
+			);
 			productRefGroup = ADF671182886208100675180 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				ADF671162886208100675180 /* PreviewTest */,
 				ADF6712C2886208300675180 /* PreviewTestTests */,
-				ADF671362886208300675180 /* PreviewTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,13 +221,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ADF6712B2886208300675180 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADF671352886208300675180 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,15 +252,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADF671332886208300675180 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADF6713C2886208300675180 /* PreviewTestUITests.swift in Sources */,
-				ADF6713E2886208300675180 /* PreviewTestUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -324,11 +259,6 @@
 			isa = PBXTargetDependency;
 			target = ADF671162886208100675180 /* PreviewTest */;
 			targetProxy = ADF6712E2886208300675180 /* PBXContainerItemProxy */;
-		};
-		ADF671392886208300675180 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADF671162886208100675180 /* PreviewTest */;
-			targetProxy = ADF671382886208300675180 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -556,42 +486,6 @@
 			};
 			name = Release;
 		};
-		ADF671482886208300675180 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDFLLXK789;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycompany.PreviewTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PreviewTest;
-			};
-			name = Debug;
-		};
-		ADF671492886208300675180 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDFLLXK789;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycompany.PreviewTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PreviewTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,15 +512,6 @@
 			buildConfigurations = (
 				ADF671452886208300675180 /* Debug */,
 				ADF671462886208300675180 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADF671472886208300675180 /* Build configuration list for PBXNativeTarget "PreviewTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADF671482886208300675180 /* Debug */,
-				ADF671492886208300675180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
